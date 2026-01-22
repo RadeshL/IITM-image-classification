@@ -76,7 +76,7 @@ Global Feature Vector
 Each head predicts a **count class (0–4)**.
 
 # 📁 Project Structure
-'''
+```
 main/
 |
 ├── backend/ # FastAPI + PyTorch inference backend
@@ -103,7 +103,7 @@ main/
 ├── vite.config.js
 ├── README.md
 └── .gitignore
-'''
+```
 ---
 
 # Model Files & Experiments
