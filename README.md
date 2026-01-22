@@ -75,5 +75,57 @@ Global Feature Vector
 
 Each head predicts a **count class (0–4)**.
 
+# 📁 Project Structure
+
+main/
+|
+├── backend/ # FastAPI + PyTorch inference backend
+│ ├── main.py # API server (loads model and serves predictions)
+│ ├── model_3.py # Final EfficientNet multi-head model (production)
+│ ├── predict.py # Inference utilities
+│ ├── train_yolo.py # YOLO experiment training script
+│ ├── infer_yolo.py # YOLO inference script
+│ ├── model_classifier.py # Classification-based experiments
+│ ├── model_regression.py # Regression-based experiments
+│ └── init.py
+│
+├── src/ # React frontend (Vite)
+│ ├── App.jsx 
+│ ├── UploadCard.jsx # Image upload component
+│ ├── ResultsCard.jsx # Prediction display
+│ ├── ClassifyButton.jsx # API trigger button
+│ ├── LightPillar.jsx # UI animation components
+│ ├── ShinyText.jsx
+│ ├── TextType.jsx
+│ ├── assets/
+│ └── styles (.css files)
+├── package.json # Frontend dependencies
+├── vite.config.js
+├── README.md
+└── .gitignore
+
+---
+
+# Model Files & Experiments
+
+Due to GitHub's file size limits, trained model weights (`.pth`, `.pt`) are **not stored in this repository**.
+
+All trained checkpoints and experimental models can be accessed here:
+
+### Google Drive (Models & Weights)
+**[Download from Google Drive]([YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/drive/u/0/folders/1O8PJYVl0c-KNazUjE-ZKy_uJY1M_WU7L))**
+
+Contents include:
+
+- Final multi-head EfficientNet model (best_model_3.pth)
+- Earlier EfficientNet fine-tuning checkpoints
+- Classification vs regression experiments
+- YOLO detection-based baselines
+---
+To run inference locally:
+
+1. Download weights from Drive
+2. Place inside `backend/`
+3. Update `MODEL_PATH` if required
 
 
