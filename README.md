@@ -76,7 +76,7 @@ Global Feature Vector
 Each head predicts a **count class (0–4)**.
 
 # 📁 Project Structure
-
+'''
 main/
 |
 ├── backend/ # FastAPI + PyTorch inference backend
@@ -103,7 +103,7 @@ main/
 ├── vite.config.js
 ├── README.md
 └── .gitignore
-
+'''
 ---
 
 # Model Files & Experiments
@@ -113,7 +113,7 @@ Due to GitHub's file size limits, trained model weights (`.pth`, `.pt`) are **no
 All trained checkpoints and experimental models can be accessed here:
 
 ### Google Drive (Models & Weights)
-**[Download from Google Drive]([YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/drive/u/0/folders/1O8PJYVl0c-KNazUjE-ZKy_uJY1M_WU7L))**
+**[Download from Google Drive](https://drive.google.com/drive/u/0/folders/1O8PJYVl0c-KNazUjE-ZKy_uJY1M_WU7L)**
 
 Contents include:
 
